@@ -1,0 +1,69 @@
+.container {
+	justify-content: space-evenly;
+}
+
+.container > div {
+	position: relative;
+	width: 20rem;
+	height: 20rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid 1px var(--color-dark);
+}
+.container > div > img {
+	max-width: 100%;
+	max-height: 100%;
+	transition: opacity .3s ease-in;
+}
+.container > div > a {
+	font-size: 4rem;
+	color: var(--color-dark);
+	position: absolute;
+	display: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.container > div:hover > img {
+	opacity: 0.3;
+}
+.container > div:hover > a {
+	display: block;
+}
+
+.slider.slider_part {
+	background-color: var(--color-dark2);
+	color: var(--color-light);
+}
+
+.slider.slider_part section > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slider.slider_part section > div:last-child {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.slider.slider_part img {
+	object-fit: cover;
+	object-position: 50% 50%;
+	width: 20rem;
+	height: 20rem;
+	border-radius: 10rem;
+}
+
+.slider.slider_part p {
+	font-size: 1.5rem;
+}
+.slider.slider_part p:last-child {
+	margin-top: 1rem;
+}
+
+
+
+

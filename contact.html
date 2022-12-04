@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/header_footer.css">
+    <link rel="stylesheet" type="text/css" href="styles/submenu.css">
+    <link rel="stylesheet" type="text/css" href="styles/contact.css">
+
+    <script src="scripts/data.js"></script>
+    <script src="scripts/htmlHelper.js"></script>
+    <script src="scripts/eventHelper.js"></script>
+    <script src="scripts/contact.js"></script>
+    <title>PocketFox</title>
+</head>
+<body>
+    <header class="import magnet_scroll">templates/header.html</header>
+
+    <main class="full_page_header_footer">
+        <div class="container">
+            <div class="two_side_container">
+                <div>
+                    <h2>Coordonnées</h2>
+                    <div>
+                        <h3>Adresse</h3>
+                        <p class="import_addr">2 Boulevard Maréchal JUIN,Caen, FRANCE </p>
+                    </div>
+                    <div>
+                        <h3>Email</h3>
+                        <p class="import_email">company_name@company.com</p>
+                    </div>
+                    <div>
+                        <h3>Téléphone</h3>
+                        <p class="import_tel">+33 (0)6.32.12.45.65</p>
+                    </div>
+                </div>
+                <div>
+                    <h2>Formulaire de contact</h2>
+                    <form>
+                        <div>
+                            <label for="lastname">Nom</label>
+                            <input id="lastname" type="text" placeholder="Nom" pattern="[A-Za-z]{2,}.*"
+                                   title="Le nom doit avoir au minimum 2 caractères !" required/>
+                        </div>
+                        <div>
+                            <label for="firstname">Prénom</label>
+                            <input id="firstname" type="text" placeholder="Prénom" pattern="[A-Za-z]{2,}.*"
+                                   title="Le prénom doit avoir au minimum 2 caractères !" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input id="email" type="email" placeholder="Email" required>
+                        </div>
+                        <div>
+                            <label for="subject">Sujet</label>
+                            <select name="subject" id="subject"></select>
+                        </div>
+                        <div>
+                            <label for="tel">Téléphone</label>
+                            <input id="tel" type="tel" placeholder="Téléphone" required pattern="\s*0\s*([0-9]\s*){9,}">
+                        </div>
+                        <div>
+                            <label for="msg">Message</label>
+                            <textarea id="msg" placeholder="Message"></textarea>
+                        </div>
+
+                        <input type="submit" value="Envoyer">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="import">templates/footer.html</footer>
+    <script>
+
+    </script>
+</body>
+</html>

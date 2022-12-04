@@ -1,0 +1,30 @@
+<div class="logo">
+    <h1><a href="index.html">PocketFox</a></h1>
+</div>
+<nav>
+    <ul id="nav_list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+        <li><a href="realisations.html">Réalisations</a></li>
+
+        <li class="hasSubMenu">
+            <a href="partenaires.html">Partenaires</a>
+            <ul id="partenaire_sub" class="submenu">
+                <li onclick="goTo('partenaires.html#nav_list')">
+                    <div><a href="partenaires.html#nav_list">Liste</a></div>
+                </li>
+                <li onclick="goTo('partenaires.html#part_slider')">
+                    <div><a href="partenaires.html#part_slider">Témoignages</a></div>
+                </li>
+            </ul>
+        </li>
+
+        <li class="hasSubMenu">
+            <a href="tarifs.html">Tarifs</a>
+            <ul id="tarifs_sub" class="submenu"></ul>
+        </li>
+
+        <li><a href="emploi.html">Emploi</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>

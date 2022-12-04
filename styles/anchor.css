@@ -1,0 +1,41 @@
+button {
+	width: 300px;
+	height: 50px;
+	padding: 5px 10px;
+	margin: 10px;
+}
+
+button > a {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#anchor_imgs {
+	display: grid;
+	grid-gap: 3rem;
+	padding: 2rem 3rem;
+	grid-template-columns: repeat(auto-fit, 1fr);
+	grid-template-rows: repeat(auto-fit, 1fr);
+	grid-auto-rows: 1fr;
+	grid-auto-columns: 1fr;
+	grid-auto-flow: column;
+	overflow-x: auto;
+	overflow-y: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+#anchor_imgs .card {
+	width: 30rem;
+	height: 30rem;
+
+	transition: transform .2s ease-in;
+}
+#anchor_imgs .card:hover {
+	transform: scale(1.05);
+}
+
+#anchor_imgs .card div {
+	height: 100%;
+	overflow: hidden;
+}

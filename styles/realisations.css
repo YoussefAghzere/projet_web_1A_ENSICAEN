@@ -1,0 +1,36 @@
+#real_grid {
+	display: grid;
+	grid-gap: 3rem;
+	padding: 2rem 3rem;
+	grid-template-columns: repeat(auto-fit, 1fr);
+	grid-template-rows: repeat(auto-fit, 1fr);
+	grid-auto-rows: 1fr;
+	grid-auto-columns: 1fr;
+	grid-auto-flow: column;
+	overflow-x: auto;
+	overflow-y: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+#real_grid .card {
+	width: 20rem;
+	height: 40rem;
+
+	transition: transform .2s ease-in;
+}
+#real_grid .card:hover {
+	transform: scale(1.05);
+}
+
+#real_grid .card div:first-child {
+	height: 60%;
+	margin: .5rem;
+	overflow: hidden;
+}
+#real_grid .card div:last-child {
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

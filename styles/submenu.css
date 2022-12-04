@@ -1,0 +1,45 @@
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: var(--color-dark);
+
+    padding: 0;
+
+    flex-direction: column;
+    z-index: 5;
+
+    border-left: solid 1px var(--color-light);
+    border-top: solid 1px var(--color-light);
+    border-bottom: solid 1px var(--color-light2);
+    border-right: solid 1px var(--color-light2);
+
+}
+
+ul > li.hasSubMenu:hover {
+    transform: none;
+}
+
+ul li.hasSubMenu:hover > .submenu {
+    display: flex;
+}
+
+ul li.hasSubMenu > .submenu div {
+    transition: transform .2s;
+}
+ul li.hasSubMenu > .submenu li {
+    transition: background-color .2s;
+}
+
+ul li.hasSubMenu > .submenu li:hover div {
+    transform: scale(1.05) translateX(-.6rem);
+}
+ul li.hasSubMenu > .submenu li div a {
+    width: 100%;
+}
+ul li.hasSubMenu > .submenu li:hover {
+    background-color: var(--color-light2);
+}
+
+.submenu > li {
+    padding: 1rem 2rem;
+}
